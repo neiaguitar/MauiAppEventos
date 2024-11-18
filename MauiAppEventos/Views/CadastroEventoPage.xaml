@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppEventos.Views.CadastroEventoPage"
+             Title="Cadastro de Evento">
+
+    <VerticalStackLayout Padding="10" Spacing="10">
+        <Entry x:Name="entryNome" Placeholder="Nome do Evento" />
+        <DatePicker x:Name="datePickerDataInicio" />
+        <DatePicker x:Name="datePickerDataTermino" />
+        <Entry x:Name="entryNumeroParticipantes" Placeholder="Número de Participantes" Keyboard="Numeric" />
+        <Entry x:Name="entryLocal" Placeholder="Local do Evento" />
+        <Entry x:Name="entryCustoPorParticipante" Placeholder="Custo por Participante" Keyboard="Numeric" />
+        <Button Text="Salvar" Clicked="OnSalvarClicked" />
+    </VerticalStackLayout>
+
+</ContentPage>
